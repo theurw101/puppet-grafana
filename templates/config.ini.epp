@@ -1,0 +1,17 @@
+<%- | Hash $cfg | -%>
+# This file is managed by Puppet, any changes will be overwritten
+
+<%- $cfg.keys.sort.each |$key| { -%>
+  <%- if $cfg[$key] !~ Hash { -%>
+<%= $key %> = <%= $cfg[$key] %>
+  <%- } -%>
+<%- } -%>
+<%- $cfg.keys.sort.each |$key| { -%>
+  <%- if $cfg[$key] =~ Hash { -%>
+
+[<%= $key %>]
+    <%- $cfg[$key].keys.sort.each |$valkey| { -%>
+<%= $valkey %> = <%= $cfg[$key][$valkey] %>
+    <%- } -%>
+  <%- } -%>
+<%- } -%>
