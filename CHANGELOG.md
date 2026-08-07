@@ -4,7 +4,26 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
-## [v15.0.0](https://github.com/voxpupuli/puppet-grafana/tree/v15.0.0) (2026-03-26)
+## [v15.0.1](https://github.com/voxpupuli/puppet-grafana/tree/v15.0.1) (2026-08-07)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-grafana/compare/v15.0.0...v15.0.1)
+
+**Fixed bugs:**
+
+- Bug: the grafana package provider always tries to collect packages - also on nodes, where grafana is not used [\#408](https://github.com/voxpupuli/puppet-grafana/issues/408)
+- package provider causes an error for alls systems without grafana installed [\#400](https://github.com/voxpupuli/puppet-grafana/issues/400)
+- Fix grafana package name on FreeBSD [\#407](https://github.com/voxpupuli/puppet-grafana/pull/407) ([smortex](https://github.com/smortex))
+
+**Closed issues:**
+
+- docker method install: no way to set/use custom image/registry source [\#242](https://github.com/voxpupuli/puppet-grafana/issues/242)
+
+**Merged pull requests:**
+
+- fix\(provider\): Make commands really optional [\#415](https://github.com/voxpupuli/puppet-grafana/pull/415) ([tuxmea](https://github.com/tuxmea))
+- Use grafana::docker\_image in 'docker' install method [\#406](https://github.com/voxpupuli/puppet-grafana/pull/406) ([toggetit](https://github.com/toggetit))
+
+## [v15.0.0](https://github.com/voxpupuli/puppet-grafana/tree/v15.0.0) (2026-03-31)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-grafana/compare/v14.2.0...v15.0.0)
 
