@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Puppet::Type.type(:grafana_plugin).provide(:grafana_cli) do
-  commands :grafana_cli => 'grafana-cli'
+  commands grafana_cli: 'grafana-cli'
 
   defaultfor feature: :posix
 

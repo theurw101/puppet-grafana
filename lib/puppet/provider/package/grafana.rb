@@ -7,7 +7,7 @@ Puppet::Type.type(:package).provide :grafana, parent: Puppet::Provider::Package 
 
   has_feature :installable, :install_options, :uninstallable, :upgradeable, :versionable
 
-  commands :grafana_cli => 'grafana-cli'
+  commands grafana_cli: 'grafana-cli'
 
   def self.pluginslist
     plugins = {}
