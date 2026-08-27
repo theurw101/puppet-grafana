@@ -19,7 +19,7 @@ Naming/PredicatePrefix:
     - 'lib/puppet/provider/grafana_notification/grafana.rb'
     - 'lib/puppet/provider/grafana_user/grafana.rb'
 
-# Offense count: 1
+# Offense count: 3
 # This cop supports unsafe autocorrection (--autocorrect-all).
 RSpec/BeEq:
   Exclude:
